@@ -32,6 +32,7 @@ body {
 }
 
 #user-input {
+
   padding: 1rem;
   max-width: 30rem;
   margin: 2rem auto;
@@ -43,6 +44,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 1.5rem;
+}
+
+.input-cell {
+  padding: 0.5rem;
 }
 
 #user-input label {
