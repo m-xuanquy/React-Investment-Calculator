@@ -6,9 +6,9 @@ const tableHeaders = ["Year", "Total Savings", "Interest (Year)", "Total Interes
 
 export default function Table({ display, values, onCalculate }) {
     const [isDisplay, setIsDisplay] = useState(display);
-    // console.log(values);
+
     const tableBody = calculateInvestmentResults(values);
-    // console.log(tableBody);
+
     return (
         (!display ? <p className="center">No Data Available</p> :
             (

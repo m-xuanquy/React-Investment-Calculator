@@ -16,15 +16,14 @@ function deriveDisplay(array) {
 
 function App() {
   const [values, setValues] = useState(initialValues);
-  const isDisplay = deriveDisplay(values);
-  console.log(values);
+  const [isDisplay, setIsDisplay] = useState(false);
 
   function handleReset() {
-    setValues([]);
+    setIsDisplay(false);
   }
 
   function handleCalculate() {
-    setValues(initialValues);
+    setIsDisplay(true);
   }
 
   function handleValueChange(name, value) {

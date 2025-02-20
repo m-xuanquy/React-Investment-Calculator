@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function InputCell({label, initialValue, onValueChange}) {
+export default function InputCell({label, text, initialValue, onValueChange}) {
     const [cellValue, setCellValue] = useState(initialValue);
 
     function handleChange(event) {
@@ -12,7 +12,7 @@ export default function InputCell({label, initialValue, onValueChange}) {
     return (
         <div className="input-cell">
             <label>
-                {label}
+                {text}
                 <input type="number" required value={cellValue} onChange={handleChange}/>
             </label>
         </div>

@@ -1,5 +1,5 @@
-export default function Button({children, onSelect}) {
+export default function Button({children, id, onSelect}) {
     return (
-        <button onClick={onSelect}>{children}</button>
+        <button onClick={onSelect} id={id}>{children}</button>
     );
 }
